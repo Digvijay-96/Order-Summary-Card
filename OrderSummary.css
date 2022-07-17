@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    min-height: 100vh;
+    background-color: rgb(226, 229, 254);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pattern{
+    background-image: url(../pattern-background-desktop.svg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+     z-index: -1;
+    background-position: center;
+    background-size: cover;
+    height: 65vh;
+}
+
+p{
+    font-size: 16px;
+    color: rgb(141, 153, 186);
+}
+
+.main-img{
+    border-radius: 15px;
+    max-width: 100%;
+    max-height: 32%;
+}
+
+.container{
+    max-width: 400px;
+    background-color: rgb(233, 241, 251);
+    border-radius: 15px;
+    margin: 16px 32px;
+}
+
+.text-content{
+    padding: 30px;
+}
+
+.plan-box{
+    background-color: rgba(203, 234, 248, 0.669) ;
+    padding:20px;
+    border-radius: 20px;
+}
+
+.price-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-info{
+    display: flex;
+    align-items: center;
+}
+
+.price-info img{
+    width:40px;
+    height: 40px;
+}
+
+.title{
+    font-weight: 900;
+    color: rgb(34, 34, 100);
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.subtitle{
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.annual{
+    margin: 3px 0;
+    margin-left: 16px;
+    color: rgb(34, 34, 100);
+    font-weight: 700;
+}
+
+.price{
+    margin: 3px 0;
+    margin-left: 16px;
+}
+
+.change-btn{
+    color: rgb(44, 44, 182);
+    font-weight: 700;
+}
+
+.change-btn:hover{
+    text-decoration: none;
+    color: rgb(85, 85, 223);
+}
+
+.order{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.order a{
+    margin-top:30px;
+    text-decoration: none;
+}
+
+.proceed-btn{
+    background-color: rgb(46, 46, 228);
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.proceed-btn:hover{
+    background-color: rgb(85, 85, 222);
+}
+
+.cancel-btn{
+    color: rgb(120, 141, 175);
+    font-weight: 900;
+}
+
+.cancel-btn:hover{
+    color: rgb(44, 44, 182);
+}
+
+/* Make the page responsive with media query */
+
+@media screen and (max-width:450px) {
+    .card-info{
+        padding: 24px;
+    }
+
+    .annual .price .change-btn{
+        font-size:14px;
+    }
+
+    .pattern{
+        background-image: url(../pattern-background-mobile.svg);
+        height: 300px;
+    }
+}
+
+
+@media screen and(max-width:350px){
+    .price-info{
+        flex-direction: column;
+    }
+    .text-content h2{
+        font-size: 18px;
+    }
+    .subtitle{
+        font-size: 14px;
+    }
+    
+}
+
+
+@media screen and (max-width:300px) {
+   
+    .plan-box .price-container .price-info{
+        flex-direction: column;
+    }
+}
+
+
